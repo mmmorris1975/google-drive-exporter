@@ -17,8 +17,8 @@ export_types = {
   'rtf':  'application/rtf',
   'pdf':  'application/pdf',
   'odf':  'application/vnd.oasis.opendocument.text',
-  'doc':  'application/vnd.openxmlformats-officedocument.wordprocessingml.document ',
-  'docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document '
+  'doc':  'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+  'docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 }
 
 logger = logging.getLogger()
@@ -39,7 +39,7 @@ try:
   parser.add_argument('-f', '--format', type=str, default='pdf', choices=export_types.keys(), help='Format to export the document as (default=pdf)')
   parser.add_argument('-o', '--out', type=str, default='.', help='Directory to store the exported output (default=current dir)')
 
-  flags  = parser.parse_args()
+  flags = parser.parse_args()
 except ImportError:
   flags = None
 
