@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# outputs/secrets of the export script
+*.pdf
+*.txt
+*.json
